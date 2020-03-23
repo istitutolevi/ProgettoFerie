@@ -12,9 +12,9 @@ namespace ProgettoFerie.EntitiesMappings
 
             HasRequired(_ => _.InsegnanteDisposizione)
                 .WithMany(_ => _.OreADisposizione)
-                .Map(d => d.MapKey("IdInsegnanteDisposizione"));
+                .HasForeignKey(d => d.IdInsegnanteDisposizione);
 
-            HasOptional(_ => _.InegnanteUtilizzo)
+            HasOptional(_ => _.InsegnanteUtilizzo)
                 .WithMany(_ => _.OreUtilizzate)
                 .Map(d => d.MapKey("IdInsegnanteUtilizzo"));
 
