@@ -1,11 +1,12 @@
 ﻿($(document).ready(function () {
 
 
-    $("#but").click(function () {
+    $("#btn").click(function () {
 
-        var email = $("#txt_email").val();
-        var pwd = $("#txt_pw").val();
-        var Cpwd = $("#txt_cpw").val();
+        var Data = {};
+        Data.email = $("#txt_email").val();
+        Data.pwd = $("#txt_pw").val();
+        Data.Cpwd = $("#txt_cpw").val();
         
         
 
@@ -13,15 +14,13 @@
 
         $.ajax({
             type: "POST",
-            url: "http://localhost:52642/api/Account/Register",
-            data: { txt_email:email, txt_pw:pwd, txt_cpw:Cpwd },
-            dataType: "json",
-            success: function (data) {
-                window.alert("registrazione avvenuta con successo");
-            } else {
-                window.alert("registrazione fallita");
-            }
-        });
+            url: '/api/Account/Register',
+            contentType: 'application/json; charset=utf-8',
+            data: JSON.stringify(Data)
+            
+           }).done(function (data) {
+                windows.alert("registrazione avvenuta con successo!");
+}).fail(showError);
 
 
 
