@@ -6,8 +6,7 @@
         var Data = {};
         Data.email = $("#txt_email").val();
         Data.pwd = $("#txt_pw").val();
-        Data.Cpwd = $("#txt_cpw").val();
-        
+        Data.Cpwd = $("#txt_cpw").val();   
         
 
 
@@ -16,7 +15,8 @@
             type: 'POST',
             url: '/api/Account/Register',
             contentType: 'application/json; charset=utf-8',
-            data: JSON.stringify(Data)
+            data: Data,
+            dataType: html
             
            }).done(function (data) {
                 windows.alert("registrazione avvenuta con successo!");
