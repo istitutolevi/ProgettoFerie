@@ -1,34 +1,32 @@
-﻿($(document).ready(function () {
+﻿$(document).ready(function () {
 
 
     $("#btn").click(function () {
 
-        var Data = {};
-        Data.email = $("#txt_email").val();
-        Data.pwd = $("#txt_pw").val();
-        Data.Cpwd = $("#txt_cpw").val();   
-        
+        var Data = {
+            Email: $("#txt_email").val(),
+            Password: $("#txt_pw").val(),
+            ConfirmPassword: $("#txt_cpw").val()
+        };
 
 
 
         $.ajax({
-            type: 'POST',
+            type: 'post',
             url: '/api/Account/Register',
-            contentType: 'application/json; charset=utf-8',
-            data: Data,
-            dataType: html
-            
-           }).done(function (data) {
-                windows.alert("registrazione avvenuta con successo!");
-}).fail(showError);
+            contentType: 'application/json',
+            data: JSON.stringify(Data),
+           // dataType: 'json',
+            success: function (data) {
+                window.alert(data);
 
-
-
-
-
+            },
+            error: function () {
+                window.alert("errore");
+            }
+        });
 
     });
 
-
-}));
+});
 
