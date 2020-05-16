@@ -6,7 +6,7 @@
         success: function (data) {
             $.each(data, function (index, element) {
 
-                console.log(element.Data + " " + element.InsegnanteDisposizione.UserName);
+                $("#risultato").append(element.Data + " " + element.InsegnanteDisposizione.UserName + " " + element.NumeroOra );
             });
         }
     });
