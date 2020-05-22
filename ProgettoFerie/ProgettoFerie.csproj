@@ -271,8 +271,8 @@
     <Content Include="app\jquery-1.11.1.js" />
     <Content Include="app\moment.js" />
     <Content Include="app\NuovoIndex.html" />
-    <Content Include="app\PrendiFerie.html" />
-    <Content Include="app\prendiferie.js" />
+    <Content Include="app\MettiDisp.html" />
+    <Content Include="app\mettidisp.js" />
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />

@@ -6,14 +6,18 @@
         var Array = {
             Id: $("#Nora").val(),
             NumeroOra: $("#Nora").val(),
-            Data: $("#date").val()
+            Data: $("#date").val(),
+            InsegnanteDisposizione: {
+                Id: $("#id").val(),
+                UserName: $("#email").val()
+            }
         };
 
 
 
         $.ajax({
             type: 'post',
-            url: '/api/Account/Ore',
+            url: '/api/Ore',
             contentType: 'application/json',
             data: JSON.stringify(Array),
             // dataType: 'json',
