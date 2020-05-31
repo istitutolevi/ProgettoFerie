@@ -17,12 +17,13 @@
     <link href="css/simple-sidebar.css" rel="stylesheet">
     <link href="css_cal.css" rel="stylesheet">
     <script src="jquery-1.11.1.js" TYPE="text/javascript"></script>
-    <script TYPE="text/javascript" src="mettidisp.js"></script>
+    <script src="moment.js" TYPE="text/javascript"></script>
+    <script TYPE="text/javascript" src="getOre_data_ora.js"></script>
 
 </head>
 
 <body>
-    
+   
     <div class="d-flex" id="wrapper">
 
         <!-- Sidebar -->
@@ -43,36 +44,32 @@
             <label for="dt">Date: </label>
             <input name="dt" type="datetime-local" id="date" /> <br />
             Numero Ora <input type="text" id="Nora" name="Nora"><br />
-            Id <input type="text" id="id" name="id"><br />
-            Email <input type="text" id="email" name="email"><br />
             <input type="button" id="btn" value="VAI" />
 
 
 
         </div>
-        
+
 
 
 
 
     </div>
     <!-- /#page-content-wrapper -->
+    </div>
 
-  </div>
+    <!-- /#wrapper -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- /#wrapper -->
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Menu Toggle Script -->
-  <script>
+    <!-- Menu Toggle Script -->
+    <script>
     $("#menu-toggle").click(function(e) {
       e.preventDefault();
       $("#wrapper").toggleClass("toggled");
     });
-  </script>
+    </script>
 
 </body>
 

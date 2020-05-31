@@ -267,7 +267,11 @@
     <Content Include="app\CreazioneUtente.html" />
     <Content Include="app\css_cal.css" />
     <Content Include="app\cu_css.css" />
+    <Content Include="app\Delete.html" />
+    <Content Include="app\delete.js" />
     <Content Include="app\getOre.html" />
+    <Content Include="app\getOre_Data_Ora.html" />
+    <Content Include="app\getOre_data_ora.js" />
     <Content Include="app\jquery-1.11.1.js" />
     <Content Include="app\moment.js" />
     <Content Include="app\NuovoIndex.html" />
