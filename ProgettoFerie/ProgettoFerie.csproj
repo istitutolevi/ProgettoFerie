@@ -265,6 +265,7 @@
   <ItemGroup>
     <Content Include="app\CreaUser.js" />
     <Content Include="app\CreazioneUtente.html" />
+    <Content Include="app\css\simple-sidebar.css" />
     <Content Include="app\css_cal.css" />
     <Content Include="app\css_login.css" />
     <Content Include="app\cu_css.css" />

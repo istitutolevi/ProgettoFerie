@@ -13,7 +13,7 @@
             success: function (data) {
                 $.each(data, function (index, element) {
                     $("#risultato").hide();
-                    $("#b").append(moment(element.Data).format('LLL') + " " + element.NumeroOra + " " + element.InsegnanteDisposizione.UserName + "<br>");
+                    $("#stampa").append(moment(element.Data).format('LLL') + " " + element.NumeroOra + " " + element.InsegnanteDisposizione.UserName + "<br>");
                 });
             }
         });

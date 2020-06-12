@@ -50,12 +50,12 @@ body {
   #wrapper.toggled #sidebar-wrapper {
     margin-left: -15rem;
   }
-  .list-group-item-action {
-    width: 100%;
-    color: #007bff;
-    text-align: inherit;
-}
-.bg-light {
-    background-color: #87ceeb!important;
-}
+    .list-group-item-action {
+        width: 100%;
+        color: #000000;
+        text-align: inherit;
+    }
+    .bg-light {
+        background-color: #87ceeb!important;
+    }
 }

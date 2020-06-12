@@ -20,9 +20,8 @@
             url: '/api/Ore',
             contentType: 'application/json',
             data: JSON.stringify(Array),
-            // dataType: 'json',
             success: function (data) {
-                window.alert(data);
+                window.alert("Ora aggiunta");
 
             },
             error: function () {
